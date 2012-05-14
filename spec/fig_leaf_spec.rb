@@ -1,6 +1,6 @@
 gem 'minitest' # demand gem version
 require 'minitest/autorun'
-require_relative '../lib/fig-leaf'
+require_relative '../lib/fig_leaf'
 
 def wipe_classes 
   if defined? Grandparent
