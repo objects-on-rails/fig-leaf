@@ -1,6 +1,7 @@
 # Tools for making inherited interfaces private to a class.
 module FigLeaf
   module Macros
+    private
     # Given a list of classes, modules, strings, and symbols, compile
     # a combined list of methods. Classes and modules will be queried
     # for their instance methods; strings and symbols will be treated

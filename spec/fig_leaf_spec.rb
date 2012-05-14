@@ -90,12 +90,12 @@ describe 'FigLeaf' do
     Child.new.grandparent_public_instance_method.must_equal 42
   end
   
-  # it 'does not pollute your interface by making its own methods public' do
-  #     proc { Child.hide(Parent) }.must_raise NoMethodError
-  #     class Child
-  #       include FigLeaf
-  #       hide self
-  #     end
-  #     proc { Child.hide(Parent) }.must_raise NoMethodError
-  #   end
+  it 'does not pollute your interface by making its own methods public' do
+    proc { Child.hide(Parent) }.must_raise NoMethodError
+    class Child
+      include FigLeaf
+      hide self
+    end
+    proc { Child.hide(Parent) }.must_raise NoMethodError
+  end
 end
