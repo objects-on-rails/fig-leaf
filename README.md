@@ -1,4 +1,4 @@
-fig-leaf
+fig_leaf
 ========
 
 Private inheritance for Ruby classes.
