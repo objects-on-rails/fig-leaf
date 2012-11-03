@@ -6,8 +6,16 @@ Private inheritance for Ruby classes.
 FigLeaf enables us to selectively make public methods inherited from other classes and modules private. The objects can still call these methods internally, but external classes are prevented from doing so.
 
 
-Using FigLeaf:
+##Installation
+``` sh
+gem install fig_leaf
+```
+or add to Gemfile
+``` ruby
+gem 'fig_leaf'
+```
 
+##Usage  
 ``` ruby
 class Post < ActiveRecord::Base
   include FigLeaf
